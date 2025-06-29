@@ -20,7 +20,7 @@ Content-Type: application/json
 ###
 
 # обновление продукта
-PATCH {{baseUrl}}/products/1/
+PATCH {{baseUrl}}/products/3/
 Content-Type: application/json
 
 {
@@ -30,14 +30,18 @@ Content-Type: application/json
 ###
 
 # удаление продукта
-DELETE {{baseUrl}}/products/1/
+DELETE {{baseUrl}}/products/3/
 Content-Type: application/json
 
 ###
 
 # поиск продуктов по названию и описанию
-GET {{baseUrl}}/products/?search=помидор
+GET {{baseUrl}}/products/?search=поми
 Content-Type: application/json
+
+###
+
+GET {{baseUrl}}/products/?search=поми
 
 ###
 
@@ -60,6 +64,7 @@ Content-Type: application/json
     }
   ]
 }
+
 
 ###
 
